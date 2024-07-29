@@ -68,7 +68,7 @@ def rename_interim_province(df: pd.DataFrame, province_col: str = "province", in
     return df
 
 
-def rename_city_isabela(df: pd.DataFrame, province_col: str = "province", muni_col: str = "municipality", isabela_str: str = "CITY OF ISABELA", repl: str = "CITY OF ISABELA (NOT A PROVINCE)"):
+def rename_city_isabela(df: pd.DataFrame, province_col: str = "province", muni_col: str = "geolocation", isabela_str: str = "CITY OF ISABELA", repl: str = "CITY OF ISABELA (NOT A PROVINCE)"):
     is_city_isabela = df[muni_col].str.contains(isabela_str)
     df.loc[is_city_isabela, province_col] = repl
 
@@ -79,7 +79,7 @@ def rename_provinces_with_independent_cities(df: pd.DataFrame, province_col: str
     with_independent_city = (df[province_col].str.contains(r"^.* \(including .*\)$", regex=True)) \
                           | (df[province_col].str.contains(r"^.* \(excluding .*\)$", regex=True))
 
-    df[with_independent_city, province_col] = df.loc[with_independent_city, province_col].str.replace(r"^(.*) \(.*\)$", "\\1", regex=True)
+    df.loc[with_independent_city, province_col] = df.loc[with_independent_city, province_col].str.replace(r"^(.*) \(.*\)$", "\\1", regex=True)
 
     return df
 
