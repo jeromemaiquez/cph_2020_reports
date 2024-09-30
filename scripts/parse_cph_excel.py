@@ -11,24 +11,46 @@ def get_end_row_index(sheet, n_footers):
 
 
 def remove_blank_rows(sheet, start_row, n_footers):
-    
     end_row = get_end_row_index(sheet, n_footers)
+    idxs_empty_rows = []
+    len_sheet = len(list(sheet.values)) - n_footers
 
-    # Iterate over rows in reverse order (from bottom to top)
-    for row in range(end_row, start_row - 1, -1):
-        is_blank_row = True
-        # Check if all cells in the row are blank
-        for col in range(1, sheet.max_column + 1):  # Assuming checking all columns
-            cell = sheet.cell(row=row, column=col)
-            if cell.value is not None and str(cell.value).strip() != '':
-                is_blank_row = False
-                break
-        
-        # If the row is blank, delete it
-        if is_blank_row:
-            sheet.delete_rows(row, 1)
+    for idx, row in enumerate(sheet.iter_rows(min_row=start_row, max_row=end_row)):
+        row_idx = idx + 1
+        # print(f"Checking row number: {row_idx}")
+        if not any(cell.value for cell in row):
+            idxs_empty_rows.append(row_idx)
+    
+    # print(len(idxs_empty_rows))
+
+    # sheet.delete_rows(idxs_empty_rows[0])
+
+    for idx, row_idx in enumerate(idxs_empty_rows):
+        print(f"Deleting row number: {row_idx - idx}")
+        sheet.delete_rows(row_idx - idx)
     
     return sheet
+
+
+# def remove_blank_rows(sheet, start_row, n_footers):
+    
+#     end_row = get_end_row_index(sheet, n_footers)
+
+#     # Iterate over rows in reverse order (from bottom to top)
+#     for row in range(end_row, start_row - 1, -1):
+#         is_blank_row = True
+#         # Check if all cells in the row are blank
+#         for col in range(1, sheet.max_column + 1):  # Assuming checking all columns
+#             cell = sheet.cell(row=row, column=col)
+#             if cell.value is not None and str(cell.value).strip() != '':
+#                 is_blank_row = False
+#                 break
+        
+#         # If the row is blank, delete it
+#         if is_blank_row:
+#             sheet.delete_rows(row, 1)
+    
+#     return sheet
 
 
 def get_column_from_sheet(sheet, column, start_row, n_footers, substr: None | str = None):
