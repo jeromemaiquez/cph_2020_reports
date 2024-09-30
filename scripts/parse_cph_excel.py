@@ -42,7 +42,7 @@ def get_column_from_sheet(sheet, column, start_row, n_footers, substr: None | st
         col_values.append(cell_value)
     
     if substr is not None and type(substr) == str:
-        col_values = [col for col in col_values if substr in col]
+        col_values = [value for value in col_values if substr in str(value)]
     
     return col_values
 
