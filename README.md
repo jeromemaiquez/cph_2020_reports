@@ -51,3 +51,5 @@ Calculate relevant census variables, for potential use in sectoral vulnerability
 - Consider: must the processing workflow be refactored into scripts?
 - Re-download CPH Reports to reset previous changes
 - Once processing code is modularized, calculate other variables
+
+TEST
