@@ -1,9 +1,13 @@
-## Calculating Municipality-Level Variables from the PSA 2020 Census of Population and Housing Reports
+## Calculating Municipality-Level Variables from the PSA 2020 Census of Population and Housing Reports for the Creation of Choropleth Maps
 
 Author: Jerome Maiquez
 
 ### Rationale
-Calculate relevant census variables, for potential use in sectoral vulnerability indices. For example, municipality-level rates of access to safe source of drinking water can be used as one sub-indicator of overall water access, which itself is a component of climate vulnerability in the water sector.
+PSA CPH 2020 datasets (those that are available online) are messy. In the CPH 2020 Reports, a single column houses up to multiple grouping variables and geographic hierarchies (from region, to province, down to city/municipality). This makes it extremely difficult to perform analysis on relevant socio-demographic variables on the municipality scale.
+
+The goal of this project is to transform the PSA CPH 2020 Reports datasets, to cleanly assign relevant census variables to each city/municipality, which must be assigned to a province and a region. After joining to a municipality vector layer, the ultimate product of this project is a set of choropleth maps for various socio-demographic themes, from population, to health & education, to service access, down to housing status.
+
+Aside from the explicitly cartographic goal of creating choropleth maps, the resulting data from this project can also be used for sectoral vulnerability analysis at the city/municipality level. For example, access to safe drinking water sources is a critical component of a community's vulnerability to water scarcity and its impacts on health and quality of life.
 
 ### Objective
 1. Parse PSA 2020 CPH Reports
@@ -11,11 +15,14 @@ Calculate relevant census variables, for potential use in sectoral vulnerability
     - Fix indent level errors in `geolocation` column
     - Assign administrative level per location based on indent level
 2. Calculate relevant variables (see below)
-3. Join to municipality shapefile via `address`
-    - Fix errors and mismatches for province names
-    - Concatenate `province` and `municipality` names into `address`
-    - Fuzzy match `address` for data and shapefile
-    - Merge (left join) with one-to-one validation
+3. ~~Join to municipality shapefile via `address`~~
+    - ~~Fix errors and mismatches for province names~~
+    - ~~Concatenate `province` and `municipality` names into `address`~~
+    - ~~Fuzzy match `address` for data and shapefile~~
+    - ~~Merge (left join) with one-to-one validation~~
+3. Join to municipality shapefile via three-level fuzzy join
+    - Fuzzy join regions between CPH data and shapefile
+    - Do same for provinces, then city/municipality
 
 ### Project Structure
 - `data_inputs/`    : Raw data (PSA CPH reports)
@@ -23,6 +30,15 @@ Calculate relevant census variables, for potential use in sectoral vulnerability
 - `notebooks/`      : For prototyping workflows
 - `scripts/`        : Local package for pre-processing
 - `README.md`
+
+### Available Tables per CPH 2020 Report
+1. Report 2A - Demographic and Housing Characteristics
+
+|Count|Housing|
+|-----|-------|
+|1|Occupied Housing Units by City/Municipality: 1960-2020|
+|2|Occupied Housing Units, Number of Households, Household Population, and Ratio of Households and Household Population to Occupied Housing Units by Type of Building, and City/Municipality: 2020|
+|3|Occupied Housing Units by Type of Building, and Number of Floors, and City/Municipality: 2020|
 
 ### Relevant Variables (all municipality level)
 1. Population Characteristics
