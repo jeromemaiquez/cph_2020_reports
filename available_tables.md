@@ -43,20 +43,20 @@
 
 |Count|Table|
 |-----|-----|
-|1|Total Number of Households by City/Municipality: 2020|
-|2|Households by Kind of Fuel for Lighting and City/Municipality: 2020|
-|3|Households by Kind of Fuel for Cooking and City/Municipality: 2020|
-|4|Households by Main Source of Water Supply for Drinking and City/Municipality: 2020|
-|5|Households by Main Source of Water Supply for Cooking and City/Municipality: 2020|
-|6|Households by Usual Manner of Garbage Disposal and City/Municipality: 2020|
-|7|Households by Kind of Toilet Facility and City/Municipality: 2020|
-|8|Households Reporting Presence of household conveniences/Information and communication technology (ICT) devices/Vehicles and City/Municipality: 2020|
-|9|Households with Internet Access by City/Municipality: 2020|
-|10|Households with Internet Use and Region: 2020|
-|11|Households in Occupied Housing Units by Tenure Status of Housing Unit and City/Municipality: 2020|
-|12|Owner-Households in Occupied Housing Units by Mode of Acquisition of Housing Unit and City/Municipality: 2020|
-|13|Owner-Households Who Had Purchased Their Housing Units by Source of Financing of the Housing Unit and City/Municipality: 2020|
-|14|Renter-Households in Occupied Housing Units by Monthly Rental of the Housing Unit and City/Municipality: 2020|
+|1|**Total Number of Households** by City/Municipality: 2020|
+|2|Households by **Kind of Fuel for Lighting** and City/Municipality: 2020|
+|3|Households by **Kind of Fuel for Cooking** and City/Municipality: 2020|
+|4|Households by **Main Source of Water Supply for Drinking** and City/Municipality: 2020|
+|5|Households by **Main Source of Water Supply for Cooking** and City/Municipality: 2020|
+|6|Households by **Usual Manner of Garbage Disposal** and City/Municipality: 2020|
+|7|Households by **Kind of Toilet Facility** and City/Municipality: 2020|
+|8|Households Reporting **Presence of household conveniences/Information and communication technology (ICT) devices/Vehicles** and City/Municipality: 2020|
+|9|Households with **Internet Access** by City/Municipality: 2020|
+|10|Households with **Internet Use** and Region: 2020|
+|11|Households in Occupied Housing Units by **Tenure Status of Housing Unit** and City/Municipality: 2020|
+|12|Owner-Households in Occupied Housing Units by **Mode of Acquisition of Housing Unit** and City/Municipality: 2020|
+|13|Owner-Households Who Had Purchased Their Housing Units by **Source of Financing of the Housing Unit** and City/Municipality: 2020|
+|14|Renter-Households in Occupied Housing Units by **Monthly Rental of the Housing Unit** and City/Municipality: 2020|
 
 ### 4. Report 2B - Population Characteristics
 
