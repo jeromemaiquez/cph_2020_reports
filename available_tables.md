@@ -63,12 +63,12 @@
 |Count|Table|
 |-----|-----|
 |1|Household Population by Age Group, Sex, and City/Municipality: 2020|
-|2|Household Population 5 to 24 Years Old Who Were Attending School at Anytime from June 2019 to May 2020 by Sex, and City/Municipality of Present Residence, and Place of School|
-|3|Gainful Workers 15 Years Old and Over by Major Occupation Group, Age Group, Sex, and City/Municipality: 2020|
-|4|Gainful Workers 15 Years Old and Over by Sex, City/Municipality of Present Residence, and Place of Work: 2020|
-|5|Gainful Workers 15 Years Old and Over by Business or Industry Section, Age Group, Sex, and City/Municipality: 2020|
-|6|Gainful Workers 15 Years Old and Over by Class of Worker, Age Group, Sex, and City/Municipality: 2020|
-|7|Ever-Married Women Aged 15-49 Years by Age Group, Number of Children Ever Born Alive, and City/Municipality: 2020|
-|8|Ever-Married Women Aged 15-49 Years by Age Group, Number of Children still Living, and City/Municipality: 2020|
+|2|**Household Population 5 to 24 Years Old Who Were Attending School** at Anytime from June 2019 to May 2020 by Sex, and City/Municipality of Present Residence, and Place of School|
+|3|Gainful Workers 15 Years Old and Over by **Major Occupation Group**, Age Group, Sex, and City/Municipality: 2020|
+|4|Gainful Workers 15 Years Old and Over by Sex, City/Municipality of Present Residence, and **Place of Work**: 2020|
+|5|Gainful Workers 15 Years Old and Over by **Business or Industry Section**, Age Group, Sex, and City/Municipality: 2020|
+|6|Gainful Workers 15 Years Old and Over by **Class of Worker**, Age Group, Sex, and City/Municipality: 2020|
+|7|Ever-Married Women Aged 15-49 Years by Age Group, **Number of Children Ever Born Alive**, and City/Municipality: 2020|
+|8|Ever-Married Women Aged 15-49 Years by Age Group, **Number of Children still Living**, and City/Municipality: 2020|
 |9|Ever-Married Women Aged 15-49 Years by Age Group, Number of Children Born Alive from 01 May 2019 to 30 April 2020, and City/Municipality: 2020|
-|10|Ever-Married Women Aged 15-49 Years by Age Group, Age at First Marriage, and City/Municipality: 2020|
+|10|Ever-Married Women Aged 15-49 Years by Age Group, **Age at First Marriage**, and City/Municipality: 2020|
