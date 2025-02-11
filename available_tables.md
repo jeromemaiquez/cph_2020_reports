@@ -72,3 +72,16 @@
 |8|Ever-Married Women Aged 15-49 Years by Age Group, **Number of Children still Living**, and City/Municipality: 2020|
 |9|Ever-Married Women Aged 15-49 Years by Age Group, Number of Children Born Alive from 01 May 2019 to 30 April 2020, and City/Municipality: 2020|
 |10|Ever-Married Women Aged 15-49 Years by Age Group, **Age at First Marriage**, and City/Municipality: 2020|
+
+### Relevant Municipality-Level Variables (extracted and grouped by ChatGPT)
+
+| **Theme**                      | **Variables**                                                                                                   |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------|
+| **Population Demographics**     | - Age <br> - Sex <br> - Marital Status <br> - Household Size <br> - Relationship to Household Head              |
+| **Education and Literacy**      | - Literacy Status <br> - Highest Grade/Year Completed                                                           |
+| **Employment and Occupation**   | - Major Occupation Group <br> - Business or Industry Section <br> - Class of Worker                             |
+| **Housing Characteristics**     | - Occupied Housing Units <br> - Type of Building <br> - Number of Floors <br> - Year Built <br> - Floor Area <br> - Construction Materials (Outer Walls, Roof, Floor, Finishing Materials) |
+| **Tenure and Land Ownership**   | - Tenure Status of Housing Unit/Lot <br> - Source of Financing <br> - Mode of Acquisition <br> - Monthly Rental  |
+| **Utilities and Facilities**    | - Kind of Fuel for Lighting <br> - Kind of Fuel for Cooking <br> - Main Source of Water Supply for Drinking and Cooking <br> - Kind of Toilet Facility <br> - Usual Manner of Garbage Disposal |
+| **Fertility and Family Structure** | - Number of Children Ever Born Alive <br> - Number of Children Still Living |
+| **Health and Functional Difficulty** | - Domain of Functional Difficulty |
